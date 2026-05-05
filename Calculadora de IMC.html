@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <p>Introduce tu altura y peso para calcular tu Índice de Masa Corporal y saber si estás en un rango saludable.</p>
+        <form id="imc-form">
+            <label for="altura">Altura (en metros, ej: 1.75):</label>
+            <input type="number" id="altura" step="0.01" max="2.30" required>
+            
+            <label for="peso">Peso (en kg, ej: 70):</label>
+            <input type="number" id="peso" step="0.1" max="400" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado" class="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
